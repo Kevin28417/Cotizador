@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD en Django</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+</head>
+
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-success fs-5 fw-bolder border border-2 border-dark">
+        <div class="container">
+            <div class="dropdown">
+                <button class="btn btn-success" type="button" data-toggle="dropdown">MENU
+                <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="/">Pagina Principal</a>
+                    </li>
+                </ul>
+              </div>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="/" class="nav-link">Pagina Principal</a>
+            </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <nav>
+        <ul>
+        </ul>
+    </nav>
+    {% block content %}
+    {% endblock %}
+    <div class="text-center bg-success border border-2 border-dark mt-5">
+        <p class="fw-bold fs-2">Contacto:
+        </p>
+        <a href="#" class="text-dark fs-2">
+            WhatsApp
+        </a>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</body>
+</html>

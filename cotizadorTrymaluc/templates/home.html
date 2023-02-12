@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+
+<main class="container">
+    <div class="card card-body text-center border border-2 border-dark">
+        <h1 style="margin-top: 0">Inversiones Trymaluc C.A</h1>
+        <p>Pagina para realizar cotizaciones creada por Kevin López.</p>
+        <div class="col-md-4 offset-md-4 border border-2 border-secondary bg-success">
+            <form action="" method="POST">
+                {% csrf_token %}
+                <h2 class="fw-bold text-dark">Iniciar sesion</h2>
+                <label for="username">Usuario</label>
+                <input type="text" class="input-group" placeholder="Escriba su usuario" name="username">
+                <label for="password">Contraseña</label>
+                <input type="password" class="input-group mb-4" name="password" placeholder="Escriba su contraseña" >
+                <button class="btn btn-success mb">Iniciar</button>
+            </form>
+        </div>
+    </div>
+</main>
+
+{% endblock %}
